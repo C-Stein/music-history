@@ -24,7 +24,7 @@ li:nth-child(n+2)::before {
   background-color: #fefac0;
   width: 75%;
   float: right;
-  margin-left: 10px;
+  margin-left: 3%;
 }
 article {
   text-align: center;
@@ -56,6 +56,10 @@ select {
   width: 90%;
   margin: 0 5% 5px 5%;
 }
+input[type=range] {
+    width: 90%;
+    margin: 0 5%;
+}
 .check1 {
   float: left;
   width: 40%;
@@ -77,16 +81,27 @@ form {
 /***************
 Media Queries
 *****************/
-@media only screen and (max-width: 320px) {
-  div {
-    background-color: red;
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 1em;
+  }
+  nav {
+    min-width: 95%;
+    margin: 5px 2.5%;
+  }
+  .container {
+    display: block;
   }
   .options {
-    width: 90%;
+    min-width: 95%;
     display: block;
+     margin: 5px 2.5%;
   }
   .library {
-    width: 90%;
+    min-width: 95%;
     display: block;
+    float: left;
+     margin: 5px 2.5%;
   }
+
 }
