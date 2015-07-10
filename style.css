@@ -1,0 +1,92 @@
+body {
+  font-size: 1.1em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+nav {
+  background-color: #ffb4b0;
+}
+ul {
+  list-style-type: none;
+}
+ul li {
+  display: inline;
+}
+
+li:nth-child(n+2)::before {
+  content: " | ";
+}
+.here {
+  text-decoration: none;
+  color: black;
+}
+
+.library {
+  background-color: #fefac0;
+  width: 75%;
+  float: right;
+  margin-left: 10px;
+}
+article {
+  text-align: center;
+  padding-left: 20px;
+}
+h2 {
+  color: #785616;
+}
+.options {
+  background-color: #4dd7fa;
+  width: 22%;
+  float: left;
+}
+.subBtn {
+  width: 60%;
+  margin: 20px 20%;
+  float: left;
+}
+h2, p {
+  text-align: justify;
+}
+nav, .library, .options {
+  border: 2px solid black;
+}
+div {
+  margin-top: 10px;
+}
+select {
+  width: 90%;
+  margin: 0 5% 5px 5%;
+}
+.check1 {
+  float: left;
+  width: 40%;
+  border: none;
+}
+.check2 {
+  float: right;
+  width: 50%;
+  border: none;
+}
+form {
+  padding: 5%;
+}
+.container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+/***************
+Media Queries
+*****************/
+@media only screen and (max-width: 320px) {
+  div {
+    background-color: red;
+  }
+  .options {
+    width: 90%;
+    display: block;
+  }
+  .library {
+    width: 90%;
+    display: block;
+  }
+}
