@@ -26,7 +26,7 @@ li:nth-child(n+2)::before {
   float: right;
   margin-left: 3%;
 }
-article {
+.songItem {
   text-align: center;
   padding-left: 20px;
 }
