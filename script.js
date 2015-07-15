@@ -6,7 +6,7 @@ songs[songs.length] = "Another Brick in the Wall > by Pink Floyd on the album Th
 songs[songs.length] = "Welco(me to the Jungle > by Guns & Roses on the album Appetite for Destruction";
 songs[songs.length] = "Ironi!c > by Alanis Moris*ette on the album Jagged Little Pill";
 songs[songs.length] = "Come Downstairs and Say Hello > by Guster on the album Guster on Ice"
-songs[songs.length] = "So What > by Miles Davis on the album Kind of Blue"
+songs.unshift("So What > by Miles Davis on the album Kind of Blue");
 
 for (var i = 0; i < songs.length; i++) {
 	var songName = songs[i];

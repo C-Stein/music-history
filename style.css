@@ -25,8 +25,9 @@ li:nth-child(n+2)::before {
 /*********** Library info **************/
 
 .library {
-  background-color: #fefac0;
-  width: 75%;
+  background-color: mintcream;
+  flex-grow: 3;
+  -webkit-flex-grow: 3;
   float: right;
   margin-left: 3%;
 }
@@ -53,7 +54,8 @@ h2 {
 
 .options {
   background-color: #4dd7fa;
-  width: 22%;
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
   float: left;
 }
 .subBtn {
@@ -93,6 +95,7 @@ form {
 }
 .container {
   display: flex;
+  display: -webkit-flex;
   margin: 0;
   padding: 0;
 }
@@ -100,6 +103,7 @@ input[type="range"] {
   width: 90%;
 }
 /*********** Media Queries **************/
+
 
 @media screen  and (max-width : 660px){
   body {
