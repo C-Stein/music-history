@@ -2,6 +2,8 @@ body {
   font-size: 1.1em;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+/*********** Nav Bar info **************/
+
 nav {
   background-color: #ffb4b0;
 }
@@ -20,19 +22,35 @@ li:nth-child(n+2)::before {
   color: black;
 }
 
+/*********** Library info **************/
+
 .library {
   background-color: #fefac0;
   width: 75%;
   float: right;
   margin-left: 3%;
 }
+.library p:nth-child(even) {
+  background-color: seashell;
+}
+.library p:nth-child(odd) {
+  background-color: mintcream;
+}
+.library p:first-child {
+  font-weight: bold;
+}
 .songItem {
   text-align: center;
   padding-left: 20px;
+  margin: 0;
+  padding: 8px 0;
 }
 h2 {
   color: #785616;
 }
+
+/*********** Options Form info **************/
+
 .options {
   background-color: #4dd7fa;
   width: 22%;
@@ -81,9 +99,8 @@ form {
 input[type="range"] {
   width: 90%;
 }
-/***************
-Media Queries
-*****************/
+/*********** Media Queries **************/
+
 @media screen  and (max-width : 660px){
   body {
     font-size: 1em;
