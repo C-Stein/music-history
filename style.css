@@ -31,10 +31,10 @@ li:nth-child(n+2)::before {
   float: right;
   margin-left: 3%;
 }
-.library p:nth-child(even) {
+.songItem:nth-child(even) {
   background-color: seashell;
 }
-.library p:nth-child(odd) {
+.songItem:nth-child(odd) {
   background-color: mintcream;
 }
 /*.library p:first-child {
