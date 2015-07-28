@@ -37,9 +37,9 @@ li:nth-child(n+2)::before {
 .library p:nth-child(odd) {
   background-color: mintcream;
 }
-.library p:first-child {
+/*.library p:first-child {
   font-weight: bold;
-}
+}*/
 .songItem {
   text-align: center;
   padding-left: 20px;
@@ -48,6 +48,16 @@ li:nth-child(n+2)::before {
 }
 h2 {
   color: #785616;
+}
+#more {
+  float: right;
+  margin: 20px;
+  font-size: 1.2em;
+}
+
+#delete {
+  display: inline;
+
 }
 
 /*********** Options Form info **************/
