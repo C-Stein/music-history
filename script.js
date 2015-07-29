@@ -33,7 +33,7 @@ function addSongsToDom(list) {
   songContent += " on ";
   songContent += list[i].album;
   songContent += "     <input type='button' value='delete' class='delete' id='delete" + i + "'>"
-  songContent += "</p><br>";
+  songContent += "</p>";
 
   $library.prepend(songContent);
 	}
