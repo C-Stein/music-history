@@ -21,6 +21,7 @@
 
 var $library = $("#library");
 var $more = $("#more");
+var $byebye = $(".delete");
 var musicContent = [];
 var moreMusicContent = [];
 function addSongsToDom(list) {
@@ -31,8 +32,8 @@ function addSongsToDom(list) {
   songContent += list[i].artist;
   songContent += " on ";
   songContent += list[i].album;
-  songContent += "</p>";
-  songContent += "<input type='button' value='delete' id='delete'>"
+  songContent += "     <input type='button' value='delete' class='delete' id='delete" + i + "'>"
+  songContent += "</p><br>";
 
   $library.prepend(songContent);
 	}
@@ -58,10 +59,15 @@ function moreMusic() {
   });
 }
 
+function hideSong() {
+  var songToDelete = $(this).parent();
+  songToDelete.hide().html();
+  console.log("hideSong called" + "songtoDelete = " + songToDelete);
+}
 
 $(document).ready(function() {
   loadMusic();
   $more.click(moreMusic);
-	
+	$(document).on('click', '.delete', (hideSong));
 });
 
